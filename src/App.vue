@@ -1,14 +1,27 @@
 <template>
-  <h1 class="text-center">Hello</h1>
-  <i class="fa-solid fa-house"></i>
+  <div id="app">
+    <PaymentComponent />
+  </div>
 </template>
 
 <script>
-  export default {
-    name: 'App',
-  }
+import PaymentComponent from './components/PaymentComponent.vue';
+
+export default {
+  name: 'App',
+  components: {
+    PaymentComponent,
+  },
+};
 </script>
 
-<style lang="scss" scoped>
-
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
 </style>
